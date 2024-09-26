@@ -1,0 +1,905 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+}
+
+.header {
+  padding: 0 0;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+.header .dropdown {
+  display: inline-flex;
+  color: #fff;
+  align-items: center;
+  gap: 10px;
+  background: #000000;
+  min-height: 65px;
+  padding: 0 31px;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.header .dropdown ul.dropdown-menu {
+  background: #000000;
+  left: 0 !important;
+  transform: inherit !important;
+  top: -250px !important;
+  width: 100%;
+  border-radius: 0 !important;
+  transform: scale(1.05);
+  transition: all 0.5s;
+  -webkit-transition: all 0.2s;
+  display: block;
+  z-index: -1;
+}
+.header .dropdown ul.dropdown-menu li a {
+  padding: 10px 25px;
+  transition: all 0.3s ease-in-out;
+  color: #fff;
+  text-transform: capitalize;
+  font-size: 15px;
+}
+.header .dropdown ul.dropdown-menu li a:hover {
+  background: transparent;
+  color: #008461;
+  padding-left: 40px;
+  font-weight: 600;
+}
+.header .dropdown ul.dropdown-menu.show {
+  top: 0 !important;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  transform: scale(1.05);
+  transition: all 0.5s;
+  -webkit-transition: all 0.25s;
+}
+.header .dropdown button.btn {
+  padding: 0;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  outline: none;
+  box-shadow: none;
+}
+.header .dropdown button.btn i {
+  font-size: 35px;
+  color: #009B72;
+}
+.header .dropdown button.btn.show i {
+  display: none !important;
+}
+.header .dropdown button.btn.show i.d-none {
+  display: inline !important;
+}
+.header .dropdown .dropdown-toggle::after {
+  display: none;
+}
+
+.container {
+  width: 94%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* section1 */
+.section1 {
+  height: 100vh;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  background-position: center bottom;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 550px;
+}
+.section1 .inbg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #111111;
+  opacity: 0.85;
+  display: flex;
+  align-items: center;
+  min-height: 550px;
+}
+.section1 .inbg h6 {
+  color: #009B72;
+  font-size: 25px;
+  line-height: 1.565;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  font-weight: 800;
+}
+.section1 .inbg h1 {
+  color: #FFFFFF;
+  font-size: 68px;
+  line-height: 1.071;
+  max-width: 900px;
+  margin-top: 0;
+  margin-bottom: 0.6rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+.section1 .inbg ul.at {
+  margin-top: 20px;
+  padding: 0;
+}
+.section1 .inbg ul.at li {
+  display: inline;
+  margin: 0 -2px;
+  border-left: 1px solid rgba(255, 255, 255, 0.3803921569);
+  padding: 0 16px;
+  border-right: 1px solid rgba(255, 255, 255, 0.3803921569);
+  font-weight: 300;
+  color: #fff;
+  font-size: 16px;
+}
+.section1 .inbg .more {
+  color: #fff;
+  line-height: 41px;
+  padding: 6px 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  border: 3px solid #626262;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.section1 .inbg .more:hover {
+  border: 3px solid #1a9e7b;
+  transform: scale(1.06);
+}
+.section1 .inbg ul.so {
+  padding: 0;
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  left: 0;
+}
+.section1 .inbg ul.so li {
+  display: inline;
+}
+.section1 .inbg ul.so li a {
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 26px;
+}
+
+section.about {
+  padding: 130px 0;
+}
+section.about .container {
+  max-width: 900px;
+}
+section.about h5 {
+  color: #009B72;
+  font-size: 18px;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+section.about h1 {
+  font-size: 34px;
+  color: #313131;
+  line-height: 1.25;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+section.about p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #888888;
+  font-weight: 300;
+  text-align: justify;
+}
+section.about .img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  background: #ccc;
+  background-position: center;
+  background-size: 109%;
+}
+section.about h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-weight: 600;
+}
+section.about .Download {
+  font-weight: 600;
+  line-height: 41px;
+  padding: 6px 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  border: 3px solid #313131;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  color: #fff;
+  min-width: 250px;
+  background: #313131;
+  margin: 0 10px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+section.about .Download:hover {
+  background: #1f1f1f;
+  transform: scale(1.1);
+}
+section.about .Hire {
+  font-weight: 600;
+  line-height: 41px;
+  padding: 6px 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  border: 3px solid #626262;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  color: #000;
+  min-width: 250px;
+  margin: 0 10px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+section.about .Hire:hover {
+  border: 3px solid #1a9e7b;
+  transform: scale(1.1);
+}
+section.about ul.Skills li {
+  position: relative;
+}
+section.about ul.Skills li .progress {
+  height: 8px;
+  background: #a1a1a1;
+  overflow: inherit;
+}
+section.about ul.Skills li .progress .progress-bar {
+  background-color: #000000;
+  overflow: inherit;
+  border-radius: 0.25rem;
+}
+section.about ul.Skills li .progress span {
+  bottom: 11px;
+  background: #000000;
+  color: #fff;
+  height: 25px;
+  width: 38px;
+  line-height: 25px;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 4px;
+  margin-top: -19px;
+  position: relative;
+}
+section.about ul.Skills li .progress span::after {
+  position: absolute;
+  content: "";
+  width: 8px;
+  height: 8px;
+  background: #000000;
+  bottom: -2px;
+  transform: rotate(-26deg);
+  left: 1px;
+  margin: auto;
+}
+section.about ul {
+  padding: 0;
+}
+section.about ul li {
+  color: #313131;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-bottom: 26px;
+  list-style: none;
+}
+section.about ul li b {
+  font-weight: 600;
+}
+section.about ul li span {
+  display: block;
+  font-size: 15px;
+}
+
+section.resume {
+  padding: 130px 0;
+  background: #ebebeb;
+}
+section.resume .container {
+  max-width: 1100px;
+}
+section.resume h3 {
+  color: #009B72;
+  font-size: 26px;
+  font-weight: 600;
+}
+section.resume h5 {
+  color: #009B72;
+  font-size: 18px;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+section.resume h1 {
+  font-size: 34px;
+  color: #313131;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+section.resume p.hd {
+  color: #7d7d7d;
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+  line-height: 30px;
+}
+section.resume h4 {
+  color: #313131;
+  font-size: 20px;
+}
+section.resume .timeline-wrap {
+  position: relative;
+}
+section.resume .timeline-wrap::before {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+  position: absolute;
+  left: 35%;
+  top: 0;
+}
+section.resume .set {
+  margin-bottom: 40px;
+}
+section.resume .set .text-start {
+  padding-left: 85px;
+}
+section.resume .set .col-sm-4 {
+  padding-right: 90px;
+  text-align: right;
+}
+section.resume .set p {
+  color: #7d7d7d;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: justify;
+}
+section.resume .set h6 {
+  color: #313131;
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 24px;
+  position: relative;
+  margin-bottom: 20px;
+}
+section.resume .set h6 span {
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  background: #313131;
+  border-radius: 50%;
+  text-align: center;
+  color: #FFFFFF;
+  position: absolute;
+  left: -50px;
+  top: -10px;
+  margin-left: -2.4rem;
+}
+section.resume .set h6::after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 50px;
+  background: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.fancybox-image, .fancybox-spaceball {
+  width: auto !important;
+  right: 0;
+  margin: auto !important;
+}
+
+section.Portfolio {
+  padding: 130px 0;
+}
+section.Portfolio .container {
+  max-width: 1100px;
+}
+section.Portfolio h3 {
+  color: #009B72;
+  font-size: 26px;
+  font-weight: 600;
+}
+section.Portfolio h5 {
+  color: #009B72;
+  font-size: 18px;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+section.Portfolio h1 {
+  font-size: 34px;
+  color: #313131;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+section.Portfolio p.hd {
+  color: #7d7d7d;
+  font-size: 18px;
+  max-width: 600px;
+  margin: auto;
+  line-height: 30px;
+}
+section.Portfolio .img {
+  box-shadow: 0 4px 9px rgba(204, 204, 204, 0.4901960784);
+  position: relative;
+  transform: scale(1);
+  transition: 0.5s ease-in-out;
+}
+section.Portfolio .img .st {
+  display: none;
+  color: #fff;
+}
+section.Portfolio .img .st h4 {
+  font-size: 30px;
+}
+section.Portfolio .img .st a {
+  color: #fff;
+  background: #23a784;
+  text-decoration: none;
+  display: inline-block;
+  padding: 9px 32px;
+  margin-top: 3px;
+}
+section.Portfolio .img:hover {
+  transform: scale(1.06);
+}
+section.Portfolio .img.graph {
+  height: 400px;
+  overflow: hidden;
+}
+section.Portfolio .img:hover .st {
+  background: rgba(0, 0, 0, 0.8);
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 28% 0;
+}
+section.Portfolio .Download {
+  font-weight: 600;
+  line-height: 41px;
+  padding: 6px 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  border: 3px solid #313131;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  color: #fff;
+  min-width: 250px;
+  background: #313131;
+  margin: 0 10px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+section.Portfolio .Download:hover {
+  background: #1f1f1f;
+  transform: scale(1.06);
+}
+section.Portfolio .Hire {
+  font-weight: 600;
+  line-height: 41px;
+  padding: 6px 35px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  border: 3px solid #626262;
+  display: inline-block;
+  text-decoration: none;
+  margin-top: 30px;
+  color: #000;
+  min-width: 250px;
+  margin: 0 10px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+section.Portfolio .Hire:hover {
+  border: 3px solid #1a9e7b;
+  transform: scale(1.06);
+}
+
+section.Contact {
+  padding: 120px 0 30px;
+  background: #151515;
+}
+section.Contact .container {
+  max-width: 1100px;
+}
+section.Contact h5 {
+  color: #009B72;
+  font-size: 18px;
+  line-height: 1.875;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+section.Contact h1 {
+  font-size: 34px;
+  color: #fff;
+  line-height: 1.25;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+section.Contact i.bi {
+  font-size: 35px;
+  color: #fff;
+  margin-top: 20px;
+}
+section.Contact h6 {
+  color: #23a784;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 16px;
+  margin-top: 20px;
+}
+section.Contact .row p {
+  color: #6e6e6e;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+section.Contact form {
+  max-width: 720px;
+  margin: 40px auto;
+}
+section.Contact form textarea.form-control {
+  min-height: 170px;
+}
+section.Contact form .form-control {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  line-height: 70px;
+  background: transparent;
+  border-radius: 0;
+  padding: 0 20px;
+  box-shadow: none;
+  color: #fff;
+}
+section.Contact form button {
+  font-weight: 600;
+  line-height: 50px;
+  padding: 6px 35px;
+  font-size: 15px;
+  width: 100%;
+  border: navajowhite;
+  background: #23a784;
+  color: #fff;
+  margin-top: 40px;
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+section.Contact form button:hover, section.Contact form button:focus {
+  background: #00523C;
+  transform: scale(1.06);
+}
+section.Contact ul.so {
+  text-align: right;
+  margin-top: 75px;
+  margin-bottom: 0;
+  padding-right: 98px;
+}
+section.Contact ul.so li {
+  display: inline;
+}
+section.Contact ul.so li a {
+  color: #fff;
+  padding: 6px 12px;
+  font-size: 26px;
+}
+section.Contact ul.so li a i.bi {
+  font-size: 22px;
+  margin-top: 0;
+}
+
+.arrow {
+  font-weight: 600;
+  width: 55px;
+  height: 65px;
+  border: navajowhite;
+  background: #23a784;
+  color: #fff;
+  margin-top: 40px;
+  display: inline-block;
+  text-align: center;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  line-height: 65px;
+  font-size: 20px;
+}
+
+.arrow:hover {
+  background: #1f1f1f;
+  color: #fff;
+}
+
+/** Large devices (desktops, less than 1600px) **/
+/** Large devices (desktops, less than 1366px) **/
+@media (max-width: 1399.98px) {
+  .section1 .inbg h6 {
+    font-size: 22px;
+  }
+  .section1 .inbg h1 {
+    font-size: 62px;
+  }
+  .section1 .inbg ul.at li {
+    font-size: 15px;
+  }
+  section.about {
+    padding: 90px 0;
+  }
+  section.about p {
+    font-size: 15px;
+    line-height: 28px;
+  }
+  section.about ul li {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  section.about ul li span {
+    font-size: 14px;
+  }
+  section.about h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+  section.resume {
+    padding: 90px 0;
+  }
+  section.resume h1 {
+    font-size: 30px;
+  }
+  section.resume p.hd {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  section.resume .set p {
+    font-size: 15px;
+    line-height: 26px;
+  }
+  section.Portfolio {
+    padding: 90px 0;
+  }
+  section.Portfolio p.hd {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  section.Portfolio h1 {
+    font-size: 30px;
+  }
+  section.Contact {
+    padding: 80px 0 20px;
+  }
+  section.Contact h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+  }
+  section.Contact h6 {
+    font-size: 17px;
+    margin-bottom: 12px;
+    margin-top: 15px;
+  }
+  section.Contact .row p {
+    font-size: 15px;
+  }
+}
+/** Large devices (desktops, less than 1200px) **/
+/**  Medium devices (tablets, less than 992px) **/
+@media (max-width: 991.98px) {
+  .section1 .inbg h1 {
+    font-size: 50px;
+  }
+  .section1 .inbg .more {
+    margin-top: 20px;
+  }
+  section.about {
+    padding: 60px 0;
+  }
+  section.about .img {
+    height: 160px;
+    width: 160px;
+  }
+  section.resume {
+    padding: 60px 0;
+  }
+  section.resume .set h6 {
+    padding-bottom: 18px;
+    margin-bottom: 12px;
+  }
+  section.resume .set h6 span {
+    height: 46px;
+    width: 46px;
+    line-height: 46px;
+    left: -34px;
+  }
+  section.resume .set .col-sm-4 {
+    padding-right: 40px;
+  }
+  section.resume .set .text-start {
+    padding-left: 65px;
+  }
+  section.Portfolio {
+    padding: 60px 0;
+  }
+  section.Contact {
+    padding: 60px 0 20px;
+  }
+}
+/** Small devices (landscape phones, less than 768px)**/
+@media (max-width: 767.98px) {
+  section.about .img {
+    margin: 0 auto 15px;
+  }
+  .section1 .inbg ul.so {
+    padding: 0;
+    position: absolute;
+    bottom: 15px;
+  }
+  section.resume h4 {
+    padding-left: 62px;
+    text-align: left !important;
+  }
+  section.resume .timeline-wrap::before {
+    display: none;
+  }
+  section.resume .set {
+    margin-bottom: 30px;
+  }
+  section.resume .set p.text-end {
+    font-size: 15px;
+    padding-left: 62px;
+    text-align: left !important;
+  }
+  section.resume .set .text-start {
+    padding-left: 75px;
+  }
+  section.resume .set h6 {
+    padding-bottom: 18px;
+    margin-bottom: 12px;
+  }
+  section.resume .set h6 span {
+    left: -22px;
+    top: 0;
+  }
+  section.about h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  section.about .Hire {
+    line-height: 36px;
+    min-width: 200px;
+    padding: 6px 16px;
+    margin: 0 2px;
+  }
+  section.about .Download {
+    line-height: 36px;
+    padding: 6px 16px;
+    min-width: 200px;
+  }
+}
+@media (max-width: 575.98px) {
+  .section1 .inbg ul.at li {
+    display: block;
+    margin: 10px 0;
+  }
+  .section1 .inbg .more {
+    margin-top: 12px;
+    line-height: 34px;
+    padding: 6px 35px;
+  }
+  .section1 .inbg h1 {
+    font-size: 38px;
+  }
+  .section1 .inbg h6 {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  section.about h1 {
+    font-size: 25px;
+    margin-bottom: 22px;
+  }
+  section.about .Hire {
+    margin: 0 2px 12px;
+  }
+  section.Portfolio .Hire {
+    line-height: 36px;
+    min-width: 300px;
+    margin: 0 10px 12px;
+    padding: 6px 10px;
+  }
+  section.Portfolio .Download {
+    line-height: 36px;
+    min-width: 300px;
+    margin: 0 10px 12px;
+    padding: 6px 10px;
+  }
+  section.Portfolio h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  section.Contact h1 {
+    font-size: 25px;
+    margin-bottom: 15px;
+  }
+  section.Contact form .form-control {
+    line-height: 65px;
+    padding: 0 15px;
+  }
+  section.Contact form textarea.form-control {
+    min-height: 155px;
+  }
+  section.Contact form button {
+    line-height: 40px;
+    margin-top: 25px;
+  }
+  section.Contact ul.so {
+    margin-top: 40px;
+  }
+  section.resume {
+    padding: 60px 0 30px;
+  }
+  section.resume .set p.text-end {
+    margin-bottom: 5px;
+  }
+  section.resume h4 {
+    margin-bottom: 4px;
+  }
+  section.resume h1 {
+    font-size: 25px;
+  }
+  section.resume h3 {
+    font-size: 22px;
+  }
+  .container {
+    width: 100%;
+  }
+}
+/** Small devices (landscape phones, less than 480px)**//*# sourceMappingURL=style.css.map */
