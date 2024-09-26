@@ -1,0 +1,15 @@
+# Ensure the directory index is the index.php file
+DirectoryIndex index.php
+
+# Redirect all requests to index.php (useful for Single Page Applications or PHP routing)
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  
+  # Don't rewrite requests for files or directories that actually exist
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  
+  # Redirect everything else to index.php
+  RewriteRule ^(.*)$ /index.php [L]
+</IfModule>
